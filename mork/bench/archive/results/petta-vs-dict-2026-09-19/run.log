@@ -1,0 +1,152 @@
+Benchmark files and logs: /home/tsigemariam/persistent-atp/mork/bench/results/petta-vs-dict-2026-09-19/generated
+Runtime: petta-space
+E1_0: unrelated proofs vs fixed leaf queries
+E1_250: unrelated proofs vs fixed leaf queries
+E1_1000: unrelated proofs vs fixed leaf queries
+E1_5000: unrelated proofs vs fixed leaf queries
+E2_50: own proof growth vs fixed leaf queries
+E2_250: own proof growth vs fixed leaf queries
+E2_1000: own proof growth vs fixed leaf queries
+E3_50: atom add/remove cycle
+E3_250: atom add/remove cycle
+E3_1000: atom add/remove cycle
+E4_0: empty match overhead through PeTTa
+E4_50: empty match overhead through PeTTa
+E4_250: empty match overhead through PeTTa
+E4_1000: empty match overhead through PeTTa
+Q1_50: frontier query vs candidate count
+Q1_250: frontier query vs candidate count
+Q1_1000: frontier query vs candidate count
+Q2_50: taint-cone query vs dependent count
+Q2_250: taint-cone query vs dependent count
+Q2_1000: taint-cone query vs dependent count
+L1_50: journal projection and projected file loading
+L1_250: journal projection and projected file loading
+L1_1000: journal projection and projected file loading
+exp operation                  scale    atoms    median       p95 unit clock runtime
+E1  node                            0       66      3.37      6.06 us   petta_cpu petta-space
+E1  incoming-edges                  0       66      4.92     15.20 us   petta_cpu petta-space
+E1  outgoing-edges                  0       66      3.86      8.84 us   petta_cpu petta-space
+E1  node                            0       66      0.43      1.17 us   python_thread_cpu python-dict
+E1  incoming-edges                  0       66      0.47      0.51 us   python_thread_cpu python-dict
+E1  outgoing-edges                  0       66      0.57      2.32 us   python_thread_cpu python-dict
+E1  node                          250     1776      3.20      7.81 us   petta_cpu petta-space
+E1  incoming-edges                250     1776      5.63      8.23 us   petta_cpu petta-space
+E1  outgoing-edges                250     1776      4.85     67.32 us   petta_cpu petta-space
+E1  node                          250     1776      0.39      0.68 us   python_thread_cpu python-dict
+E1  incoming-edges                250     1776      0.42      0.67 us   python_thread_cpu python-dict
+E1  outgoing-edges                250     1776      0.37      0.41 us   python_thread_cpu python-dict
+E1  node                         1000     6906      2.44      2.63 us   petta_cpu petta-space
+E1  incoming-edges               1000     6906      4.28      8.44 us   petta_cpu petta-space
+E1  outgoing-edges               1000     6906      4.13    261.87 us   petta_cpu petta-space
+E1  node                         1000     6906      0.62      1.09 us   python_thread_cpu python-dict
+E1  incoming-edges               1000     6906      0.67      0.82 us   python_thread_cpu python-dict
+E1  outgoing-edges               1000     6906      0.62      0.81 us   python_thread_cpu python-dict
+E1  node                         5000    34266      3.10      4.88 us   petta_cpu petta-space
+E1  incoming-edges               5000    34266      4.44     10.82 us   petta_cpu petta-space
+E1  outgoing-edges               5000    34266      4.30    829.26 us   petta_cpu petta-space
+E1  node                         5000    34266      1.12      2.04 us   python_thread_cpu python-dict
+E1  incoming-edges               5000    34266      0.71     12.96 us   python_thread_cpu python-dict
+E1  outgoing-edges               5000    34266      0.42      0.68 us   python_thread_cpu python-dict
+E2  node                           50      346      4.88      9.60 us   petta_cpu petta-space
+E2  incoming-edges                 50      346      4.90      9.83 us   petta_cpu petta-space
+E2  outgoing-edges                 50      346      4.77      7.28 us   petta_cpu petta-space
+E2  node                           50      346      0.81      4.92 us   python_thread_cpu python-dict
+E2  incoming-edges                 50      346      0.79      1.20 us   python_thread_cpu python-dict
+E2  outgoing-edges                 50      346      0.74      1.04 us   python_thread_cpu python-dict
+E2  node                          250     1746      2.47      4.28 us   petta_cpu petta-space
+E2  incoming-edges                250     1746      3.58      7.39 us   petta_cpu petta-space
+E2  outgoing-edges                250     1746     15.22     29.67 us   petta_cpu petta-space
+E2  node                          250     1746      0.53      1.06 us   python_thread_cpu python-dict
+E2  incoming-edges                250     1746      0.51      0.84 us   python_thread_cpu python-dict
+E2  outgoing-edges                250     1746      0.45      0.54 us   python_thread_cpu python-dict
+E2  node                         1000     6996      3.61      4.98 us   petta_cpu petta-space
+E2  incoming-edges               1000     6996      4.41      7.67 us   petta_cpu petta-space
+E2  outgoing-edges               1000     6996     52.83     77.47 us   petta_cpu petta-space
+E2  node                         1000     6996      0.52      1.20 us   python_thread_cpu python-dict
+E2  incoming-edges               1000     6996      0.45      0.75 us   python_thread_cpu python-dict
+E2  outgoing-edges               1000     6996      0.44      0.77 us   python_thread_cpu python-dict
+E3  add-remove-cycle               50      346      9.22     19.64 us   petta_cpu petta-space
+E3  add-remove-cycle               50      346      0.64      1.07 us   python_thread_cpu python-dict
+E3  add-remove-cycle              250     1746      6.95     13.14 us   petta_cpu petta-space
+E3  add-remove-cycle              250     1746      0.77      1.53 us   python_thread_cpu python-dict
+E3  add-remove-cycle             1000     6996      6.18      7.63 us   petta_cpu petta-space
+E3  add-remove-cycle             1000     6996      0.72      1.42 us   python_thread_cpu python-dict
+E4  empty-match                     0        0    288.79    720.54 us   petta_cpu petta-space
+E4  empty-match                     0        0      0.48      0.75 us   python_thread_cpu python-dict
+E4  empty-match                    50      346    282.06    472.96 us   petta_cpu petta-space
+E4  empty-match                    50      346      0.43      0.75 us   python_thread_cpu python-dict
+E4  empty-match                   250     1746    251.59    415.05 us   petta_cpu petta-space
+E4  empty-match                   250     1746      0.36      0.59 us   python_thread_cpu python-dict
+E4  empty-match                  1000     6996    169.04    561.87 us   petta_cpu petta-space
+E4  empty-match                  1000     6996      0.32      0.62 us   python_thread_cpu python-dict
+Q1  frontier-for-state             50      346    638.82   1595.72 us   petta_cpu petta-space
+Q1  frontier-for-state             50      346     16.74     28.32 us   python_thread_cpu python-dict
+Q1  frontier-for-state            250     1746   2638.53   5231.34 us   petta_cpu petta-space
+Q1  frontier-for-state            250     1746     74.93    105.51 us   python_thread_cpu python-dict
+Q1  frontier-for-state           1000     6996  10973.05  15190.79 us   petta_cpu petta-space
+Q1  frontier-for-state           1000     6996    314.41   1452.43 us   python_thread_cpu python-dict
+Q2  taint-cone                     50      297    396.96    534.66 us   petta_cpu petta-space
+Q2  taint-cone                     50      297     22.85     24.25 us   python_thread_cpu python-dict
+Q2  taint-cone                    250     1497   2535.39   7799.76 us   petta_cpu petta-space
+Q2  taint-cone                    250     1497    162.19    190.42 us   python_thread_cpu python-dict
+Q2  taint-cone                   1000     5997   8710.27  11312.90 us   petta_cpu petta-space
+Q2  taint-cone                   1000     5997    586.16   1080.44 us   python_thread_cpu python-dict
+L1  load-projection                50      346  14860.66  14860.66 us   petta_cpu petta-space
+L1  generate-and-project           50      346    158.08    219.64 us   python_monotonic python
+L1  load-projection               250     1746  92200.45  92200.45 us   petta_cpu petta-space
+L1  generate-and-project          250     1746   1291.92   1876.99 us   python_monotonic python
+L1  load-projection              1000     6996 497432.59 497432.59 us   petta_cpu petta-space
+L1  generate-and-project         1000     6996   4109.50   7666.43 us   python_monotonic python
+# PeTTa vs indexed Python dictionaries
+
+Ratio = PeTTa median / Python-dict median. Above 1 means PeTTa took more CPU time.
+
+| Experiment | Operation | Scale | Atoms | Runtime | PeTTa median µs | Dict median µs | Ratio | PeTTa p95 µs | Dict p95 µs |
+| --- | --- | ---: | ---: | --- | ---: | ---: | ---: | ---: | ---: |
+| E1 | node | 0 | 66 | petta-space | 3.368 | 0.434 | 7.76× | 6.065 | 1.167 |
+| E1 | incoming-edges | 0 | 66 | petta-space | 4.915 | 0.467 | 10.53× | 15.204 | 0.505 |
+| E1 | outgoing-edges | 0 | 66 | petta-space | 3.863 | 0.566 | 6.83× | 8.841 | 2.324 |
+| E1 | node | 250 | 1776 | petta-space | 3.201 | 0.387 | 8.28× | 7.811 | 0.675 |
+| E1 | incoming-edges | 250 | 1776 | petta-space | 5.629 | 0.423 | 13.29× | 8.232 | 0.671 |
+| E1 | outgoing-edges | 250 | 1776 | petta-space | 4.851 | 0.371 | 13.08× | 67.319 | 0.413 |
+| E1 | node | 1000 | 6906 | petta-space | 2.439 | 0.617 | 3.96× | 2.628 | 1.088 |
+| E1 | incoming-edges | 1000 | 6906 | petta-space | 4.277 | 0.666 | 6.42× | 8.438 | 0.820 |
+| E1 | outgoing-edges | 1000 | 6906 | petta-space | 4.126 | 0.622 | 6.63× | 261.874 | 0.811 |
+| E1 | node | 5000 | 34266 | petta-space | 3.104 | 1.116 | 2.78× | 4.876 | 2.036 |
+| E1 | incoming-edges | 5000 | 34266 | petta-space | 4.437 | 0.714 | 6.21× | 10.818 | 12.956 |
+| E1 | outgoing-edges | 5000 | 34266 | petta-space | 4.303 | 0.424 | 10.14× | 829.264 | 0.676 |
+| E2 | node | 50 | 346 | petta-space | 4.883 | 0.806 | 6.06× | 9.601 | 4.922 |
+| E2 | incoming-edges | 50 | 346 | petta-space | 4.898 | 0.792 | 6.18× | 9.826 | 1.202 |
+| E2 | outgoing-edges | 50 | 346 | petta-space | 4.770 | 0.739 | 6.45× | 7.277 | 1.042 |
+| E2 | node | 250 | 1746 | petta-space | 2.467 | 0.526 | 4.69× | 4.278 | 1.062 |
+| E2 | incoming-edges | 250 | 1746 | petta-space | 3.581 | 0.506 | 7.08× | 7.391 | 0.845 |
+| E2 | outgoing-edges | 250 | 1746 | petta-space | 15.224 | 0.451 | 33.79× | 29.673 | 0.542 |
+| E2 | node | 1000 | 6996 | petta-space | 3.614 | 0.520 | 6.95× | 4.980 | 1.201 |
+| E2 | incoming-edges | 1000 | 6996 | petta-space | 4.412 | 0.450 | 9.80× | 7.667 | 0.751 |
+| E2 | outgoing-edges | 1000 | 6996 | petta-space | 52.832 | 0.440 | 120.07× | 77.471 | 0.767 |
+| E3 | add-remove-cycle | 50 | 346 | petta-space | 9.219 | 0.641 | 14.39× | 19.640 | 1.071 |
+| E3 | add-remove-cycle | 250 | 1746 | petta-space | 6.948 | 0.768 | 9.04× | 13.141 | 1.534 |
+| E3 | add-remove-cycle | 1000 | 6996 | petta-space | 6.183 | 0.718 | 8.61× | 7.631 | 1.423 |
+| E4 | empty-match | 0 | 0 | petta-space | 288.793 | 0.478 | 604.17× | 720.538 | 0.754 |
+| E4 | empty-match | 50 | 346 | petta-space | 282.060 | 0.426 | 661.34× | 472.964 | 0.752 |
+| E4 | empty-match | 250 | 1746 | petta-space | 251.589 | 0.360 | 697.89× | 415.051 | 0.587 |
+| E4 | empty-match | 1000 | 6996 | petta-space | 169.036 | 0.324 | 521.72× | 561.867 | 0.623 |
+| Q1 | frontier-for-state | 50 | 346 | petta-space | 638.824 | 16.742 | 38.16× | 1595.717 | 28.321 |
+| Q1 | frontier-for-state | 250 | 1746 | petta-space | 2638.531 | 74.933 | 35.21× | 5231.345 | 105.514 |
+| Q1 | frontier-for-state | 1000 | 6996 | petta-space | 10973.049 | 314.405 | 34.90× | 15190.794 | 1452.432 |
+| Q2 | taint-cone | 50 | 297 | petta-space | 396.955 | 22.853 | 17.37× | 534.662 | 24.246 |
+| Q2 | taint-cone | 250 | 1497 | petta-space | 2535.388 | 162.192 | 15.63× | 7799.761 | 190.416 |
+| Q2 | taint-cone | 1000 | 5997 | petta-space | 8710.273 | 586.160 | 14.86× | 11312.896 | 1080.438 |
+
+## Interpretation and limits
+
+- `petta-space` is ordinary PeTTa, not MORK. A MORK slowdown cannot be inferred from those rows.
+- Both sides use the exact same projected atoms, materialize query results, and check expected results. Graph construction is outside query timing.
+- PeTTa uses executing-thread CPU time; Python uses `thread_time_ns`. Each side has identical warm-up/sample counts. Individual calls are timed, so timer and language-call overhead remain, especially for sub-microsecond dictionary operations.
+- Python is a purpose-built graph implementation with hash indexes for nodes, fields, labels, layers, and both adjacency directions. PeTTa executes the existing MeTTa rules. These ratios compare complete implementations, not isolated storage engines or equal index layouts.
+- Frontier and taint queries materialize lists before counting. Python reachability is an iterative search; it is not a general MeTTa evaluator. Equivalence is checked on these acyclic benchmark workloads, not all possible graphs.
+- L1 has no paired ratio: parsing/executing a MeTTa file is not equivalent to constructing dictionaries. Python projection is already measured separately.
+- This does not compare memory use, persistence, live commits, crash recovery, general unification, or concurrent workloads. No single overall slowdown is meaningful across these operations.
+- One sweep, with PeTTa followed by Python per case. Repeat independent sweeps for stable estimates; p95 from a small sample is noisy.
+

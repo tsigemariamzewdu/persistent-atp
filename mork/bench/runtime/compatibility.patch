@@ -1,0 +1,30 @@
+--- a/PeTTa/src/metta.pl
++++ b/PeTTa/src/metta.pl
+@@ -279,7 +279,7 @@
+ :- maplist(register_fun, [superpose, empty, let, 'let*', '+','-','*','/', '%', min, max, 'change-state!', 'get-state', 'bind!',
+                           '<','>','==', '!=', '=', '=?', '<=', '>=', and, or, xor, implies, not, sqrt, exp, log, cos, sin,
+                           'first-from-pair', 'second-from-pair', 'car-atom', 'cdr-atom', 'unique-atom',
+-                          repr, repra, parse, 'println!', 'readln!', test, assert, 'mm2-exec', atom_concat, atom_chars, copy_term, term_hash,
++                          repr, repra, parse, 'println!', 'readln!', test, assert, 'mm2-exec', 'mork-flush', atom_concat, atom_chars, copy_term, term_hash,
+                           foldl, first, last, append, length, 'size-atom', sort, msort, member, 'is-member', 'exclude-item', list_to_set, maplist, eval, reduce, 'import!',
+                           'add-atom', 'remove-atom', 'get-atoms', match, 'is-var', 'is-expr', 'is-space', 'get-mettatype',
+                           decons, 'decons-atom', 'py-call', 'get-type', 'get-metatype', '=alpha', concat, sread, cons, reverse,
+--- a/PeTTa/mork_ffi/morkspaces.pl
++++ b/PeTTa/mork_ffi/morkspaces.pl
+@@ -11,6 +11,16 @@
+ %Remove all same atoms:
+ 'remove-atom'('&mork', Atom, true) :- !, swrite(Atom, S),
+                                          mork("remove-atoms", S, _).
++
++% Compatibility for PeTTa's conjunctive match: the native API accepts one
++% pattern, so evaluate conjuncts in order while sharing Prolog bindings.
++match('&mork', [','|Patterns], OutPattern, Result) :- !,
++    mork_match_conjunction(Patterns),
++    Result = OutPattern.
++mork_match_conjunction([]).
++mork_match_conjunction([Pattern|Rest]) :-
++    match('&mork', Pattern, Pattern, _),
++    mork_match_conjunction(Rest).
+ 
+ %Match for pattern:
+ match('&mork', Pattern, OutPattern, Result) :- !, Pattern_Template = [Pattern, Pattern],

@@ -1,0 +1,6 @@
+!(add-atom &mork (bench-runtime quoted "hello world"))
+!(mork-flush &mork)
+!(match &mork (bench-runtime quoted $value) $value)
+!(collapse (get-atoms &mork))
+!(remove-atom &mork (bench-runtime quoted "hello world"))
+!(collapse (match &mork (bench-runtime quoted $value) $value))

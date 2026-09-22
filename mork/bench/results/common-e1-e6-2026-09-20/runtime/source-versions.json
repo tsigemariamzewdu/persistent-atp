@@ -1,0 +1,36 @@
+{
+  "PeTTa": "e1490899cefc67c128d5311ff4861f9997674957",
+  "MORK": "aaa955449ba0c3df11b9087e63f14c330f46c95f",
+  "PathMap": "3a0b508d018e004f0eaeeba38b24ca0d9f4a1f63",
+  "mork_ffi": "f6553aa4559142895c5547f56e490d29e29469f1",
+  "source_note": "PeTTa, MORK, and PathMap extracted from local committed HEADs; external working directories unchanged. FFI cloned from https://github.com/patham9/mork_ffi.",
+  "files_sha256": {
+    "PeTTa/mork_ffi/target/release/libmork_ffi.so": "c5eef6d6284479575523225a0a086937d92aab5ea218d277234a0933472372de",
+    "PeTTa/mork_ffi/morklib.so": "f53076101d498082c15e3a1368a38d51a4852b996cb7e3b9d6fa01c43972ffe8",
+    "PeTTa/mork_ffi/Cargo.lock": "19e6310896860b34d46514434b9534c27f8eeb4e62eb20cd7d917e2a14a99ee5",
+    "PeTTa/mork_ffi/src/lib.rs": "b43501ac28710721add539784eac169a527ac3a9aa03c5315f60a09624ceeacb",
+    "PeTTa/mork_ffi/morkspaces.pl": "706f58c29fc208cee5d4724775ac99a7036eb006a1e4eb692fca7c8f330be0ab",
+    "PeTTa/src/metta.pl": "482e768d0d4149f5300225cb1cc9bca27c0402cadbdd48dc6f516685a27a76ac",
+    "runtime-compatibility.patch": "8b4a6f9b38da3a50282019580acc6c7ba3d4ef36d3d65ec5db0607c5ac058a41"
+  },
+  "rustc": "rustc 1.95.0-nightly (0376d43d4 2026-02-20)",
+  "cargo": "cargo 1.95.0-nightly (ce69df6f7 2026-02-12)",
+  "swipl": "SWI-Prolog version 9.3.33 for x86_64-linux",
+  "build_command": "RUSTFLAGS='-C target-cpu=native' cargo build --manifest-path .bench-runtime/PeTTa/mork_ffi/Cargo.toml --release --offline",
+  "compatibility_patches": [
+    "Register mork-flush in PeTTa known functions so queued writes can be acknowledged as read-visible.",
+    "Evaluate PeTTa comma conjunctions sequentially through native MORK matches with shared Prolog variable bindings. The native match API accepts a single pattern; there is no PeTTa-space fallback."
+  ],
+  "ffi_output_ownership": "Rust OUTBUF is thread-local reusable Vec; returned bytes must be copied before next call; no free API or per-call allocation leak.",
+  "validation": {
+    "test_frontier": {
+      "passed_assertions": 36,
+      "failed_assertions": 0
+    },
+    "test_dependency_taint": {
+      "passed_assertions": 39,
+      "failed_assertions": 0
+    },
+    "conjunction_cases": 5
+  }
+}

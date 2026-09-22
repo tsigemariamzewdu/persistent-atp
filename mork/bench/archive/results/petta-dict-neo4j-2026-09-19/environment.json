@@ -1,0 +1,39 @@
+{
+  "started_at": "2026-09-19T19:29:22.667168+00:00",
+  "python": "3.12.12",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "logical_cpus": 12,
+  "arguments": [
+    "--allow-petta-space",
+    "--output-dir",
+    "mork/bench/results/petta-dict-neo4j-2026-09-19"
+  ],
+  "iterations": 30,
+  "warmup_batches": 3,
+  "batch_size": 20,
+  "quick": false,
+  "source_sha256": {
+    "mork/bench/__init__.py": "acd187270f20ca84f288187e3f46a6b9fcb16894f4975860d8a349a9221500c9",
+    "mork/bench/__main__.py": "7428e6fc6810567a06a608a06b7069de8a95f31f0b7094cb904bd90f92a1b6b5",
+    "mork/bench/compare_backends.py": "d69d04e28a7240232c5eaa8b3e4b114ad45a95485b738eb7d3036cd2ed1f5686",
+    "mork/bench/dict_baseline.py": "7bcb96085e4abb1061f85eaa5a97530b52c05e7a1ee26ee83bf97f5f85d31ec1",
+    "mork/bench/experiments.py": "3c46596630ba2676ea6d1a36eff68bc25efde25bea5abe6f88ee83552707f132",
+    "mork/bench/harness.py": "dff3d9db64fd3fe04623b4eea0681caaecff48f43fc82735eb1745e52c656000",
+    "mork/bench/neo4j_baseline.py": "fbfc625e5f524cd6ec5e6e325ab7b657b21af951a6f1c5fd3d20ff8d07438730",
+    "mork/bench/workload.py": "95dbfa233853d0a89537441336c7c29c4220b85c6436f0a90fcf5e4ea103fa1a"
+  },
+  "status": "complete",
+  "petta_runtime": "petta-space",
+  "neo4j_server": [
+    {
+      "name": "Neo4j Kernel",
+      "versions": [
+        "5.20.0"
+      ],
+      "edition": "community"
+    }
+  ],
+  "database_nodes_before": 382,
+  "database_nodes_after": 382,
+  "finished_at": "2026-09-19T19:31:21.492885+00:00"
+}

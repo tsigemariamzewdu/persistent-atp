@@ -1,0 +1,27 @@
+{
+  "recorded_at": "2026-09-19T19:17:32.825813+00:00",
+  "python": "3.12.12",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "logical_cpus": 12,
+  "cpu_model": "12th Gen Intel(R) Core(TM) i5-1235U",
+  "swipl": "SWI-Prolog version 9.3.33 for x86_64-linux",
+  "repository_commit": "1c3beb67da52e1fd11396929f91f15abe275aa0a",
+  "repository_branch": "benchmark-mork",
+  "repository_state": "working tree includes uncommitted benchmark adaptation",
+  "petta_commit": "e1490899cefc67c128d5311ff4861f9997674957",
+  "petta_status": "?? examples/math.metta.html\n?? lib/use-module!.metta\n?? lib/use-module!.pl\n?? lib/use-module!.qlf\n?? python/petta.egg-info/\n?? repos/\n?? run.sh.bak",
+  "petta_launcher": "/usr/local/bin/petta",
+  "mork_library_present": false,
+  "command": ".venv/bin/python -m mork.bench --allow-petta-space --output-dir mork/bench/results/petta-space-2026-09-19/generated --json mork/bench/results/petta-space-2026-09-19/results.json",
+  "iterations": 30,
+  "warmup": 3,
+  "mode": "full",
+  "runtime": "petta-space",
+  "source_sha256": {
+    "mork/bench/__init__.py": "acd187270f20ca84f288187e3f46a6b9fcb16894f4975860d8a349a9221500c9",
+    "mork/bench/__main__.py": "5ca0bbcec4beb6dd34b68fc288bbbf743b815b015f76e8d442c69b0d8a4c4319",
+    "mork/bench/experiments.py": "3c46596630ba2676ea6d1a36eff68bc25efde25bea5abe6f88ee83552707f132",
+    "mork/bench/harness.py": "4e79d2833f52c9fbaa1251fab6be2cd0501cfb9f93938ee7ca1c50051d2a8c0b",
+    "mork/bench/workload.py": "95dbfa233853d0a89537441336c7c29c4220b85c6436f0a90fcf5e4ea103fa1a"
+  }
+}

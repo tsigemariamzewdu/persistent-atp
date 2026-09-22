@@ -1,0 +1,9 @@
+{
+  "cpu_model": "12th Gen Intel(R) Core(TM) i5-1235U",
+  "logical_cpus": 12,
+  "memory_total": "MemTotal:        7963860 kB",
+  "python_packages": {
+    "neo4j": "6.3.0",
+    "python-dotenv": "1.2.3"
+  }
+}

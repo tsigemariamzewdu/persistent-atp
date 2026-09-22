@@ -1,0 +1,66 @@
+Benchmark files and logs: /home/tsigemariam/persistent-atp/mork/bench/results/petta-space-2026-09-19/generated
+Runtime: petta-space
+E1_0: unrelated proofs vs fixed leaf queries
+E1_250: unrelated proofs vs fixed leaf queries
+E1_1000: unrelated proofs vs fixed leaf queries
+E1_5000: unrelated proofs vs fixed leaf queries
+E2_50: own proof growth vs fixed leaf queries
+E2_250: own proof growth vs fixed leaf queries
+E2_1000: own proof growth vs fixed leaf queries
+E3_50: atom add/remove cycle
+E3_250: atom add/remove cycle
+E3_1000: atom add/remove cycle
+E4_0: empty match overhead through PeTTa
+E4_50: empty match overhead through PeTTa
+E4_250: empty match overhead through PeTTa
+E4_1000: empty match overhead through PeTTa
+Q1_50: frontier query vs candidate count
+Q1_250: frontier query vs candidate count
+Q1_1000: frontier query vs candidate count
+Q2_50: taint-cone query vs dependent count
+Q2_250: taint-cone query vs dependent count
+Q2_1000: taint-cone query vs dependent count
+L1_50: journal projection and projected file loading
+L1_250: journal projection and projected file loading
+L1_1000: journal projection and projected file loading
+exp operation                  scale    atoms    median       p95 unit clock runtime
+E1  node                            0       66      2.88      9.06 us   petta_cpu petta-space
+E1  incoming-edges                  0       66      4.28     10.68 us   petta_cpu petta-space
+E1  outgoing-edges                  0       66      3.43      5.91 us   petta_cpu petta-space
+E1  node                          250     1776      2.75     14.71 us   petta_cpu petta-space
+E1  incoming-edges                250     1776      4.12      7.45 us   petta_cpu petta-space
+E1  outgoing-edges                250     1776      3.66     38.93 us   petta_cpu petta-space
+E1  node                         1000     6906      4.61     21.96 us   petta_cpu petta-space
+E1  incoming-edges               1000     6906      4.29      8.77 us   petta_cpu petta-space
+E1  outgoing-edges               1000     6906      7.68    128.98 us   petta_cpu petta-space
+E1  node                         5000    34266      3.53     10.90 us   petta_cpu petta-space
+E1  incoming-edges               5000    34266      3.73      6.18 us   petta_cpu petta-space
+E1  outgoing-edges               5000    34266      5.51    886.49 us   petta_cpu petta-space
+E2  node                           50      346      4.68     19.77 us   petta_cpu petta-space
+E2  incoming-edges                 50      346      4.26     10.49 us   petta_cpu petta-space
+E2  outgoing-edges                 50      346      7.43     14.72 us   petta_cpu petta-space
+E2  node                          250     1746      3.30      5.92 us   petta_cpu petta-space
+E2  incoming-edges                250     1746      4.44      8.22 us   petta_cpu petta-space
+E2  outgoing-edges                250     1746     13.55     19.23 us   petta_cpu petta-space
+E2  node                         1000     6996      4.41     15.31 us   petta_cpu petta-space
+E2  incoming-edges               1000     6996      5.92     19.75 us   petta_cpu petta-space
+E2  outgoing-edges               1000     6996     59.02     69.44 us   petta_cpu petta-space
+E3  add-remove-cycle               50      346      7.03      8.59 us   petta_cpu petta-space
+E3  add-remove-cycle              250     1746     12.50     28.57 us   petta_cpu petta-space
+E3  add-remove-cycle             1000     6996      9.00     26.22 us   petta_cpu petta-space
+E4  empty-match                     0        0    176.15    688.80 us   petta_cpu petta-space
+E4  empty-match                    50      346    142.96    197.58 us   petta_cpu petta-space
+E4  empty-match                   250     1746    169.32    525.42 us   petta_cpu petta-space
+E4  empty-match                  1000     6996    203.94    508.88 us   petta_cpu petta-space
+Q1  frontier-for-state             50      346    669.92   1414.49 us   petta_cpu petta-space
+Q1  frontier-for-state            250     1746   3031.54   5443.68 us   petta_cpu petta-space
+Q1  frontier-for-state           1000     6996  11504.31  12830.77 us   petta_cpu petta-space
+Q2  taint-cone                     50      297    696.31   1689.62 us   petta_cpu petta-space
+Q2  taint-cone                    250     1497   1900.64   3585.82 us   petta_cpu petta-space
+Q2  taint-cone                   1000     5997   9156.87  10782.16 us   petta_cpu petta-space
+L1  load-projection                50      346  15718.82  15718.82 us   petta_cpu petta-space
+L1  generate-and-project           50      346    192.55    424.50 us   python_monotonic python
+L1  load-projection               250     1746 113770.65 113770.65 us   petta_cpu petta-space
+L1  generate-and-project          250     1746   2230.53   8455.24 us   python_monotonic python
+L1  load-projection              1000     6996 471616.25 471616.25 us   petta_cpu petta-space
+L1  generate-and-project         1000     6996   3871.70   8130.20 us   python_monotonic python

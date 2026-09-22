@@ -1,0 +1,30 @@
+{
+  "cpu_model": "12th Gen Intel(R) Core(TM) i5-1235U",
+  "neo4j_driver_version": "6.3.0",
+  "repository_commit": "1c3beb67da52e1fd11396929f91f15abe275aa0a",
+  "repository_branch": "benchmark-mork",
+  "repository_state": "uncommitted benchmark adaptation; source hashes record tested code",
+  "petta_commit": "e1490899cefc67c128d5311ff4861f9997674957",
+  "petta_status": "?? examples/math.metta.html\n?? lib/use-module!.metta\n?? lib/use-module!.pl\n?? lib/use-module!.qlf\n?? python/petta.egg-info/\n?? repos/\n?? run.sh.bak",
+  "petta_launcher": "/usr/local/bin/petta",
+  "neo4j_endpoint_is_loopback": true,
+  "command": "PYTHONPATH=src:. .venv/bin/python -m mork.bench.compare_backends --allow-petta-space --output-dir mork/bench/results/petta-dict-neo4j-2026-09-19",
+  "source_sha256": {
+    "neo4j_adapter/rules.py": "00ebb9b8b149ff17f70a12a8e9943ee1c3f55f0ef6cff29290a10ac0b5269248",
+    "neo4j_adapter/adapter.py": "64de5e8825a138f0fbec39b51d81fa6a2b6f25ba207c53265abf1fb1f40f106e",
+    "neo4j_adapter/errors.py": "bdeb5d429fcb04d886ea00e9c438fcbad3748e026968f2c62e1d2108e9ef38d9",
+    "neo4j_adapter/session.py": "7bb3bc10018c182e8324dc5b23a0e6e39b992f9445db61844ef9eda875fa2bea",
+    "neo4j_adapter/schema.py": "ad727aab08a3b7e4a3d795ac2743b8f881ed241caf7ff2af4fd95d72b1c05015",
+    "neo4j_adapter/replay.py": "15bd512d6a7145a0717ebd069064da9a010715eb08a4281af4992d6b6ffe94ef",
+    "neo4j_adapter/constants.py": "dbea8213c87f575038c2f698f1f385c5fc6ada59ffbd2c286efa6ea84a39c5d9",
+    "neo4j_adapter/__init__.py": "f130cc27fbe45e66362681f0fec977000df572c01040c0869fdd546ccfea1513",
+    "mork/projector/core.py": "239b381584f741bd40a8158c6b6b601bf9559a213d9001e9aca09b975bec8f33",
+    "mork/projector/writer.py": "29216667736c7342f0201c5b8c0a9339e554c4234a8cf7a1b388625918f80e8f",
+    "mork/projector/__init__.py": "861dda9f84d548576eb3451f0e9ad93344ef5ab83f50b79867a45c46f4f84fbb",
+    "mork/rules/dependency-taint.metta": "02ff4ff16161fa839950491db265ce0c9c539a6797cee511ea55bf37e3029f2c",
+    "mork/rules/index_views.metta": "848286a995fb4bad81de9d3859e91193764de107cdc6534a8e03f002c129c092",
+    "mork/rules/projections.metta": "c8508d5d64e3796ef8b8a07e896c4f6931693a345f9d5ad18ee4869416ef77aa",
+    "mork/rules/frontier.metta": "155ed6386268e6b4eceac0054148bf4ee905843f9298a2f45bdb3adc43e0b2fe",
+    "src/shared/vocab.py": "c7681cc0eec145722141d6a1e87c830bf0a582361ed32acf6119661793ed63fe"
+  }
+}
